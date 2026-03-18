@@ -1,0 +1,29 @@
+@use 'tokens' as *;
+
+.hero-banner {
+  background-color: $color-primary;
+  color: $color-neutral-white;
+  padding: $space-2xl $space-md;
+  text-align: center;
+
+  &__content {
+    max-width: $breakpoint-lg;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: $font-family-base;
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-tight;
+    margin: 0 0 $space-md;
+  }
+
+  &__subtitle {
+    font-family: $font-family-base;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-base;
+    margin: 0;
+  }
+}

@@ -1,0 +1,22 @@
+<div class="ranking-page">
+  <h1 class="ranking-page__title">Classements</h1>
+
+  <nav class="ranking-page__tabs">
+    @for (champ of championships; track champ.id) {
+      <button
+        class="ranking-page__tab"
+        [class.ranking-page__tab--active]="selected()?.id === champ.id"
+        (click)="selectChampionship(champ)"
+      >
+        {{ champ.name }}
+      </button>
+    }
+  </nav>
+
+  @if (selected(); as champ) {
+    <section class="ranking-page__content">
+      <h2 class="ranking-page__subtitle">{{ champ.name }} — {{ champ.season }}</h2>
+      <app-ranking-table [rankings]="champ.rankings" />
+    </section>
+  }
+</div>
