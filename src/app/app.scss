@@ -1,0 +1,59 @@
+@use 'tokens' as *;
+
+:host {
+  display: block;
+  font-family: $font-family-base;
+  color: $color-neutral-dark;
+  min-height: 100dvh;
+}
+
+.app-header {
+  background-color: $color-neutral-white;
+  border-bottom: 1px solid $color-neutral-mid;
+
+  &__nav {
+    max-width: $breakpoint-lg;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: $space-xl;
+    padding: $space-md;
+  }
+
+  &__brand {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+    color: $color-primary;
+    text-decoration: none;
+  }
+
+  &__links {
+    display: flex;
+    list-style: none;
+    gap: $space-md;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $color-neutral-dark;
+    text-decoration: none;
+    padding: $space-xs $space-sm;
+    border-radius: $border-radius-sm;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    &--active {
+      color: $color-primary;
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+.app-main {
+  min-height: calc(100dvh - 4rem);
+}

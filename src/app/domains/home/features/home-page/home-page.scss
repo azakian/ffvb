@@ -1,0 +1,52 @@
+@use 'tokens' as *;
+
+.home-page {
+  &__news {
+    max-width: $breakpoint-lg;
+    margin: 0 auto;
+    padding: $space-xl $space-md;
+  }
+
+  &__news-title {
+    font-family: $font-family-base;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+    color: $color-neutral-dark;
+    margin: 0 0 $space-lg;
+  }
+
+  &__news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: $space-lg;
+  }
+
+  &__news-card {
+    background-color: $color-neutral-white;
+    border: 1px solid $color-neutral-mid;
+    border-radius: $border-radius-md;
+    padding: $space-lg;
+  }
+
+  &__news-card-title {
+    font-family: $font-family-base;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-medium;
+    color: $color-primary;
+    margin: 0 0 $space-sm;
+  }
+
+  &__news-card-summary {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    color: $color-neutral-dark;
+    line-height: $line-height-base;
+    margin: 0 0 $space-sm;
+  }
+
+  &__news-card-date {
+    font-family: $font-family-base;
+    font-size: $font-size-xs;
+    color: $color-neutral-mid;
+  }
+}

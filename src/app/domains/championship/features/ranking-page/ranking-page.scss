@@ -1,0 +1,51 @@
+@use 'tokens' as *;
+
+.ranking-page {
+  max-width: $breakpoint-lg;
+  margin: 0 auto;
+  padding: $space-xl $space-md;
+
+  &__title {
+    font-family: $font-family-base;
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-bold;
+    color: $color-neutral-dark;
+    margin: 0 0 $space-lg;
+  }
+
+  &__tabs {
+    display: flex;
+    gap: $space-sm;
+    margin-bottom: $space-lg;
+  }
+
+  &__tab {
+    font-family: $font-family-base;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    padding: $space-sm $space-md;
+    border: 1px solid $color-neutral-mid;
+    border-radius: $border-radius-sm;
+    background-color: $color-neutral-white;
+    color: $color-neutral-dark;
+    cursor: pointer;
+
+    &--active {
+      background-color: $color-primary;
+      color: $color-neutral-white;
+      border-color: $color-primary;
+    }
+  }
+
+  &__content {
+    margin-top: $space-md;
+  }
+
+  &__subtitle {
+    font-family: $font-family-base;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-medium;
+    color: $color-primary;
+    margin: 0 0 $space-md;
+  }
+}

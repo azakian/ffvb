@@ -1,0 +1,36 @@
+<div class="ranking-table">
+  <table class="ranking-table__grid">
+    <thead>
+      <tr class="ranking-table__header-row">
+        <th class="ranking-table__cell ranking-table__cell--rank">#</th>
+        <th class="ranking-table__cell ranking-table__cell--team">Équipe</th>
+        <th class="ranking-table__cell">MJ</th>
+        <th class="ranking-table__cell">V</th>
+        <th class="ranking-table__cell">D</th>
+        <th class="ranking-table__cell">Sets +</th>
+        <th class="ranking-table__cell">Sets −</th>
+        <th class="ranking-table__cell ranking-table__cell--points">Pts</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (team of rankings(); track team.rank) {
+        <tr class="ranking-table__row">
+          <td class="ranking-table__cell ranking-table__cell--rank">{{ team.rank }}</td>
+          <td class="ranking-table__cell ranking-table__cell--team">{{ team.teamName }}</td>
+          <td class="ranking-table__cell">{{ team.played }}</td>
+          <td class="ranking-table__cell">{{ team.won }}</td>
+          <td class="ranking-table__cell">{{ team.lost }}</td>
+          <td class="ranking-table__cell">{{ team.setsWon }}</td>
+          <td class="ranking-table__cell">{{ team.setsLost }}</td>
+          <td class="ranking-table__cell ranking-table__cell--points">{{ team.points }}</td>
+        </tr>
+      } @empty {
+        <tr>
+          <td class="ranking-table__cell ranking-table__cell--empty" colspan="8">
+            Aucun classement disponible.
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

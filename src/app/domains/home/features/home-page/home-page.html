@@ -1,0 +1,18 @@
+<div class="home-page">
+  <app-hero-banner [hero]="hero" />
+
+  <section class="home-page__news">
+    <h2 class="home-page__news-title">Actualités</h2>
+    <div class="home-page__news-grid">
+      @for (item of news; track item.id) {
+        <article class="home-page__news-card">
+          <h3 class="home-page__news-card-title">{{ item.title }}</h3>
+          <p class="home-page__news-card-summary">{{ item.summary }}</p>
+          <time class="home-page__news-card-date">{{ item.date }}</time>
+        </article>
+      } @empty {
+        <p>Aucune actualité disponible.</p>
+      }
+    </div>
+  </section>
+</div>

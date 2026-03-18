@@ -23,12 +23,10 @@ src/app/domains/[domain-name]/
 
 ### Current Domains
 
-| Domain         | Folder                            | Description                           |
-| -------------- | --------------------------------- | ------------------------------------- |
-| Leagues        | `src/app/domains/leagues/`        | League listings, standings, schedules |
-| Clubs          | `src/app/domains/clubs/`          | Club directory, detail pages          |
-| Players        | `src/app/domains/players/`        | Player profiles, statistics           |
-| National Teams | `src/app/domains/national-teams/` | National team rosters, results        |
+| Domain       | Folder                          | Description                            |
+| ------------ | ------------------------------- | -------------------------------------- |
+| Home         | `src/app/domains/home/`         | Landing page, hero banner, latest news |
+| Championship | `src/app/domains/championship/` | Championship ranking results, tables   |
 
 ## Provisioning Rule
 

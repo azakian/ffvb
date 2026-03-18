@@ -1,0 +1,51 @@
+@use 'tokens' as *;
+
+.ranking-table {
+  overflow-x: auto;
+
+  &__grid {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: $font-family-base;
+    font-size: $font-size-sm;
+  }
+
+  &__header-row {
+    background-color: $color-primary;
+    color: $color-neutral-white;
+  }
+
+  &__row {
+    border-bottom: 1px solid $color-neutral-mid;
+
+    &:nth-child(even) {
+      background-color: $color-neutral-light;
+    }
+  }
+
+  &__cell {
+    padding: $space-sm $space-md;
+    text-align: center;
+    white-space: nowrap;
+
+    &--rank {
+      font-weight: $font-weight-bold;
+      width: $space-2xl;
+    }
+
+    &--team {
+      text-align: left;
+    }
+
+    &--points {
+      font-weight: $font-weight-bold;
+      color: $color-primary;
+    }
+
+    &--empty {
+      text-align: center;
+      padding: $space-xl;
+      color: $color-neutral-dark;
+    }
+  }
+}
