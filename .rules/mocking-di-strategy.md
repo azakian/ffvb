@@ -1,4 +1,4 @@
-# Mocking &amp; Dependency Injection Strategy
+# Mocking & Dependency Injection Strategy
 
 > We have **no backend**. All data is served by mock services using a simulated delay.
 

@@ -1,4 +1,4 @@
-# Styling Coherence — SCSS &amp; Design Tokens
+# Styling Coherence — SCSS & Design Tokens
 
 ## Design Tokens
 

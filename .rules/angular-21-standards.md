@@ -45,8 +45,13 @@ Use the built-in control-flow blocks. Do **not** use the legacy structural direc
 }
 
 <!-- Switch -->
-@switch (status()) { @case ('loading') { <app-spinner /> } @case ('error') { <app-error /> }
-@default { <app-content /> } }
+@switch (status()) { @case ('loading') {
+<app-spinner />
+} @case ('error') {
+<app-error />
+} @default {
+<app-content />
+} }
 ```
 
 ## Dependency Injection
